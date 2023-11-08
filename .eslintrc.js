@@ -6,6 +6,8 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'next',
+    'prettier'
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -16,6 +18,7 @@ module.exports = {
   },
   plugins: [
     'react',
+    'prettier'
   ],
   rules: {
     'react/no-unescaped-entities': 0,
@@ -29,6 +32,7 @@ module.exports = {
     'no-alert': 0,
     'react/jsx-no-constructed-context-values': 0,
     'import/extensions': 0,
+    'prettier/prettier': ['error', { singleQuote: true }],
     'react/prop-types': 0,
     'linebreak-style': 0,
     'react/state-in-constructor': 0,
